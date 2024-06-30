@@ -1,0 +1,9 @@
+# action.yml
+name: 'Runner IP'
+description: 'Get the current runner ipv4 address'
+outputs:
+  ipv4: # id of output
+    description: 'The runner ipv4 address'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

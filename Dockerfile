@@ -8,4 +8,4 @@ COPY ./main ./main
 RUN chmod +x ./main
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["./main"]
+CMD ["./main"]

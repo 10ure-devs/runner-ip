@@ -15,6 +15,7 @@ This package requires:
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -48,6 +49,8 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to get public ip: %v", err)
 	}
+
+	fmt.Println("ipv4", ip)
 
 	githubactions.SetOutput("ipv4", ip)
 }
